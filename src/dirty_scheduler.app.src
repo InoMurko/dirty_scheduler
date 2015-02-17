@@ -1,0 +1,9 @@
+{application, dirty_scheduler,
+  [{description, "dirty_scheduler erlang example"},
+   {vsn, "1.0.0"},
+   {modules, []},
+   {registered, []},
+   {applications, [kernel, stdlib]},
+   {mod, {dirty_scheduler_app, []}},
+   {env, []}
+  ]}.
