@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Dirty scheduler : Erlang dirty scheduler example for R17.3+">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Dirty scheduler</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/InoMurko/dirty_scheduler">View on GitHub</a>
+
+          <h1 id="project_title">Dirty scheduler</h1>
+          <h2 id="project_tagline">Erlang dirty scheduler example for R17.3+</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/InoMurko/dirty_scheduler/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/InoMurko/dirty_scheduler/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="dirty_scheduler" class="anchor" href="#dirty_scheduler" aria-hidden="true"><span class="octicon octicon-link"></span></a>dirty_scheduler</h1>
+
+<p>Don't forget to build your OTP with "--enable-dirty-schedulers" flag.
+Check it with <code>erlang:system_info(dirty_cpu_schedulers_online)</code>. It will return badarg if they are not enabled.</p>
+
+<p>You can check if your call is being processed on a dirty scheduler with:
+<code>if(enif_is_on_dirty_scheduler(hp)) {
+    //hp is ErlNifEnv
+}</code></p>
+
+<p>Since Erlang 17.03 enif_schedule_dirty_nif, enif_schedule_dirty_nif_finalizer and enif_dirty_nif_finalizer were removed (erl_nif.h).
+More info: <a href="http://www.erlang.org/doc/man/erl_nif.html#enif_schedule_nif">http://www.erlang.org/doc/man/erl_nif.html#enif_schedule_nif</a></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Dirty scheduler maintained by <a href="https://github.com/InoMurko">InoMurko</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
